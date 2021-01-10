@@ -4,9 +4,11 @@
 <head>
   <title>Joshua An's Website</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.css">
   <!--FA-->
   <script src="sidenav.js"></script>
+  <script src="clickable.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -36,7 +38,7 @@
   <div class="header">
     <h1>Welcome to Joshua An's website!</h1>
 
-    <a href="#about"><button type="button" class="button">Learn More</button></a>
+    <a href="#about"><button type="button" class="button button1">Learn More</button></a>
     <div class="intro-social">
       <a href="https://www.linkedin.com/in/joshua-an-a44368175/" target="_blank" class="fab fa-linkedin"></a>
       <a href="https://github.com/joshuaan7" target="_blank" class="fab fa-github"></a>
@@ -47,23 +49,34 @@
   </div>
 
 
-  <div class="text-box" id="about">
-    <h2>About me</h2>
-    <p>I was born and raised in Southern California, and I am now currently a
-      third year student at Northeastern University pursuing a Bachelor of Science degree in Computer Engineering.
-    </p>
-    <p>I've always wanted to be an engineer because of how much I enjoy problem
-      solving, creating, and appreciating the process of visualizing progress.
-    </p>
-    <p>Coupled alongside my profound interest in technology and how it has changed
-      and continues to change the world we live in, I strive to become a computer engineer
-      capable of making a positive impact in the way we conduct our lives.
-    </p>
+  <div class="row" id="about">
+    <div class="side1" style="padding-top:2%;">
+      <h1>About me</h1>
+
+      <p>I was born and raised in Southern California, and I am now currently a
+        third year student at Northeastern University pursuing a Bachelor of Science degree in Computer Engineering.
+      </p>
+      <br>
+      <p>I've always wanted to be an engineer because of how much I enjoy problem
+        solving, creating, and appreciating the process of visualizing progress.
+      </p>
+      <br>
+      <p>Coupled alongside my profound interest in technology and how it has changed
+        and continues to change the world we live in, I strive to become a computer engineer
+        capable of making a positive impact in the way we conduct our lives.
+      </p>
+    </div>
+
+    <div class="side2" style="padding:2%;">
+      <h1>Resume</h1>
+      <iframe src="Joshua_An_Resume_10_22_20.pdf" width="100%" height="90%"></iframe>
+
+    </div>
   </div>
 
   <div class="row" id="info1">
     <div class="side1">
-      <h2>Profile</h2>
+      <h1>Profile</h1>
       <h3>Currently working as an software engineering co-op at Boston Engineering Corporation.</h3>
 
       <p>Education: Northeastern University</p>
@@ -78,12 +91,82 @@
     </div>
 
     <div class="side2">
-      <h2>Skills</h2>
+      <h1>Skills</h1>
     </div>
   </div>
 
   <h2 id="exp">Work and Leadership Experience</h2>
   <!-- Info 1 -->
+
+
+  <div class="row">
+    <div class="column">
+        <div class="card" onclick="ShowAndHide('be')">
+          <br><br><br><br>
+          <img src="images/boston_engineering.png" alt="boston_engineering" style="width:100%">
+          <div class="container">
+            <h3><a target="_blank " href="https://www.boston-engineering.com/">Boston Engineering Corporation</a></h3>
+            <p>Software Engineering Co-op</p>
+          </div>
+        </div>
+
+        <div id="be" style="display:none">sana</div>
+    </div>
+
+    <div class="column">
+
+        <div class="card" onclick="ShowAndHide('bts')">
+          <br>
+          <img src="images/lightelligence.png" alt="lightelligence" style="width:100%">
+          <div class="container">
+            <h3><a target="_blank" href="https://www.lightelligence.ai">Lightelligence</a></h3>
+            <p>Software Engineering Co-op</p>
+          </div>
+        </div>
+
+      <div id="bts" style="display:none">dahyun</div>
+    </div>
+
+    <div class="column">
+      <div class="card" onclick="ShowAndHide('hyperloop')">
+
+        <img src="images/hyperloop.jpg" alt="hyperloop" style="width:100%">
+        <div class="container">
+          <h3><a target="_blank" href="https://coe.northeastern.edu/orgs/paradigm-hyperloop/">Northeastern University Paradigm Hyperloop Team</a></h3>
+          <p>Member</p>
+        </div>
+      </div>
+      <div id="hyperloop" style="display:none">tzuyu</div>
+    </div>
+
+    <div class="column">
+      <div class="card" onclick="ShowAndHide('bluezendrone')">
+        <br><br><br><br><br><br><br><br>
+        <img src="images/bluezendrone.png" alt="bluezendrone" style="width:100%">
+        <div class="container">
+          <h3><a target="_blank " href="https://www.sysdrone.co.kr/home?lang=ko">BluezenDrone</a></h3>
+          <p>International Consultant</p>
+        </div>
+      </div>
+      <div id="bluezendrone" style="display:none">lisa</div>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <br><br><br><br>
+        <img src="images/csa.png" alt="csa" style="width:100%">
+        <div class="container">
+          <h3><a target="_blank " href="http://northeastern.edu/csa/">Northeastern University Chinese Student Association</a></h3>
+          <p>Vice President, Event Coordinator</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="row" id="info1">
     <div class="side1">
       <h2>Boston Engineering Corporation</h2>
@@ -161,6 +244,51 @@
 
   <h2 id="projects">Projects</h2>
 
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <br><br><br><br>
+        <img src="images/csa.png" alt="csa" style="width:100%">
+        <div class="container">
+          <h3>Northeastern University Chinese Student Association Website</h3>
+          <p>Summer 2020</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <br><br><br>
+        <img src="images/andriod_studio.png" alt="android" style="width:100%">
+        <div class="container">
+          <h3>Wheel of Food: Android Mobile Application</h3>
+          <p>Summer 2019</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <br>
+        <img src="images/pillbot.jpg" alt="cornerstone" style="width:100%; height:100%;">
+        <div class="container">
+          <h3>Pillbot: Cornerstone of Engineering Course</h3>
+          <p>Spring 2019</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/alexa_skill.jpeg" alt="bluezendrone" style="width:100%">
+        <div class="container">
+          <h3>Alexa Skill "Sound Clips":<br> Hack@WPI</h3>
+          <p>Winter 2019</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="row" id="project1">
     <div class="side1"></div>
 
@@ -171,7 +299,9 @@
       <p>Managed a five-person team: Taught members basic Git skills, assigned tasks to each member, and hosted weekly
         meetings to provide progress updates</p>
     </div>
+  </div>
 
+  <div class="row" id="project2">
     <div class="side2">
       <h2>Wheel of Food: Android Mobile Application</h2>
       <h3>Summer 2019</h3>
@@ -181,7 +311,9 @@
 
     <div class="side1">
     </div>
+  </div>
 
+  <div class="row" id="project3">
     <div class="side1">
     </div>
 
@@ -191,7 +323,9 @@
       <p>Built automated pill-dispensing device using Arduino which activated at a time contingent on the user</p>
       <p>Dispensed certain number of pills at specified time based on a clock</p>
     </div>
+  </div>
 
+  <div class="row" id="project4">
     <div class="side2">
       <h2>Alexa Skill: Sound Clips: Hack@WPI</h2>
       <h3>Winter 2019</h3>
@@ -201,12 +335,46 @@
 
     <div class="side1">
     </div>
-
   </div>
+  <!--EMAIL FORM (PHP not supported on github pages)
+  <div class="contact-outer">
+    <div class="contact" id="contact">
+      <h2>Contact me</h2>
+
+      <form action="contact.php" method="post">
+        <label>Your Name</label>
+        <br>
+        <input type="text" name="Name" size="40">
+        <br>
+        <br>
+        <label>Your Email Address</label>
+        <br>
+        <input type="text" name="Email" size="40">
+        <br>
+        <br>
+        <label>Subject</label>
+        <br>
+        <input type="text" name="Subject" size="40">
+        <br><br>
+        <label>Your Message</label>
+        <br>
+        <textarea name="Message" cols="90" rows="15"></textarea>
+        <br>
+        <input type="submit" name="Submit" value="Send Message"></input>
+      </form>
+    </div>
+  </div>
+  -->
 
   <!-- Footer -->
-  <div class="footer" id="contact">
-    <h2>Contact me at</h2>
+  <div class="footer">
+
+    <p style="font-size:220%; word-spacing:1em;">
+      <a href="https://www.linkedin.com/in/joshua-an-a44368175/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://github.com/joshuaan7" target="_blank" class="fab fa-github"></a>
+      <a href="https://www.facebook.com/joshua.an.98" target="_blank" class="fab fa-facebook-f"></a>
+      <a href="https://www.instagram.com/joshuwazzan/" target="_blank" class="fab fa-instagram"></a>
+    </p>
     <p><a href="https://joshuaan7@gmail.com" target="_blank">joshuaan7@gmail.com</a></p>
     <p><a href="https://an.j@northeastern.edu" target="_blank">an.j@northeastern.edu</a></p>
     <p>Last Updated: January 15th, 2021</p>
