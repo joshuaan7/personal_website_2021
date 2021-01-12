@@ -1,10 +1,8 @@
 html, body {
-  margin: 0;
-  padding: 0;
   height: 100%;
-  width: 100%;
   scroll-behavior: smooth;
 }
+
 
 /*links*/
 /* unvisited link and visited link */
@@ -41,7 +39,6 @@ p {
   height: 100%;
   font-size: 40px;
 }
-
 
 .header h1 {
   font-size: 120%;
@@ -89,7 +86,6 @@ p {
   margin: none;
   transition-duration: none;
   text-decoration: none;
-
 }
 
 .button2:hover {
@@ -98,12 +94,10 @@ p {
   padding: none;
 }
 
-
 .button1:hover {
   background-color: green;
   color: white;
 }
-
 
 /* Dropdown Button */
 .dropbtn {
@@ -118,6 +112,7 @@ p {
 .hover-dropdown {
   position: fixed;
   display: inline-block;
+  z-index: 999;
 }
 
 /* On mouse-over */
@@ -170,16 +165,17 @@ color and some left padding to change the design of the dropdown content */
 
 /* Column container */
 .row {
-  display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  height: inherit;
+  position: relative;
+  display: flex;
 }
 
 /*Clear floats after the columns*/
 .row:after {
   content: "";
   display: table;
-  clear:both;
+  clear: both;
 }
 
 /* Side column (equal spacing) */
@@ -188,10 +184,11 @@ color and some left padding to change the design of the dropdown content */
   /* Set the width of the sidebar */
   background-color: #f1f1f1;
   /* Grey background color */
-  padding: 5%;
-  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   /* Some padding */
-  height: inherit;
+  height: auto;
+  overflow: auto;
 }
 
 /* Side column (equal spacing) */
@@ -201,7 +198,6 @@ color and some left padding to change the design of the dropdown content */
   background-color: white;
   /* White background color */
   padding: 5%;
-  padding-top: 5%;
   /* Some padding */
   height: inherit;
 }
@@ -214,7 +210,8 @@ color and some left padding to change the design of the dropdown content */
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rbga(0, 0, 0, 0.2); /*card effect*/
+  box-shadow: 0 4px 8px 0 rbga(0, 0, 0, 0.2);
+  /*card effect*/
   transition: 0.3s;
   padding: 2%;
   text-align: center;
@@ -223,6 +220,7 @@ color and some left padding to change the design of the dropdown content */
   max-height: 60%;
   position: relative;
   cursor: pointer;
+  transition: max-height 0.2s ease-out;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -237,8 +235,23 @@ color and some left padding to change the design of the dropdown content */
   bottom: 0;
   right: 0;
   left: 0;
-
 }
+
+.child-div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 1%;
+  flex-wrap: wrap;
+  display: flex;
+  transition: max-height 0.2s ease-out;
+  transform: scaleY(1);
+}
+
+.child-div p {
+  text-align: center;
+}
+
 /* Responsive layout - when the screen is less than 700px wide,
 make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
