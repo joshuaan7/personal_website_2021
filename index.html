@@ -96,16 +96,18 @@
   </div>
 
   <div class="lines">
-  <h2 id="exp">Work and Leadership Experience</h2>
-</div>
+    <h2 id="exp">Work and Leadership Experience</h2>
+  </div>
   <!-- Info 1 -->
 
 
   <div class="row" id="work">
     <div class="column">
-      <div class="card" id="be_top" onclick="ShowAndHide('be')">
+      <div class="card" id="be_top" onclick="ShowAndHide('be', 'exp', 'exp_row_2')" style="line-height:149%;">
         <br><br><br><br>
         <img src="images/boston_engineering.png" alt="boston_engineering" style="width:100%">
+        <p><br><br><br><br><br><br><br><br><br></p>
+
         <div class="container">
           <h3><a target="_blank " href="https://www.boston-engineering.com/">Boston Engineering Corporation</a></h3>
           <p>Software Engineering Co-op</p>
@@ -135,16 +137,18 @@
 
     <div class="column">
 
-      <div class="card" onclick="ShowAndHide('bts')">
+      <div class="card" onclick="ShowAndHide('light', 'exp', 'exp_row_2')">
         <br>
         <img src="images/lightelligence.png" alt="lightelligence" style="width:100%">
+        <p><br><br><br><br><br><br><br></p>
+
         <div class="container">
           <h3><a target="_blank" href="https://www.lightelligence.ai">Lightelligence</a></h3>
           <p>Software Engineering Co-op</p>
         </div>
       </div>
 
-      <div id="bts" class="child-div" style="display:none">
+      <div id="light" class="child-div" style="display:none">
         <div class="row">
           <div class="side2">
           </div>
@@ -170,217 +174,213 @@
     </div>
 
     <div class="column">
-      <div class="card" onclick="ShowAndHide('hyperloop')">
+      <div class="card" onclick="ShowAndHide('hyperloop', 'exp', 'exp_row_2')">
+
+        <img src="images/hyperloop.jpg" alt="hyperloop" style="width:90%">
+        <p><br><br><br><br><br></p>
 
         <div class="container">
-          <img src="images/hyperloop.jpg" alt="hyperloop" style="width:100%">
 
           <h3><a target="_blank" href="https://coe.northeastern.edu/orgs/paradigm-hyperloop/">Northeastern University Paradigm Hyperloop Team</a></h3>
           <p>Member</p>
         </div>
       </div>
-      <div id="hyperloop" style="display:none">tzuyu</div>
+      <div id="hyperloop" style="display:none">
+        <!-- Info 3 -->
+        <div class="row" id="info3">
+          <div class="side1">
+            <h2>Northeastern University Paradigm Hyperloop Team</h2>
+            <h3>Member</h3>
+            <h4>October 2018 - January 2019</h4>
+            <li>Researched feasible routes from Boston to NYC considering factors of elevation, pylon tubing, and tunneling</li>
+            <li>Generated a report detailing the research completed to be officially submitted to the Paradigm Hyperloop organization</li>
+          </div>
+
+          <div class="side2">
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div class="column">
-      <div class="card" onclick="ShowAndHide('bluezendrone')">
-        <p><br><br><br><br><br><br><br><br></p>
+      <div class="card" onclick="ShowAndHide('bluezendrone', 'exp', 'exp_row_2')">
+        <p><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br></p>
 
         <div class="container">
-          <img src="images/bluezendrone.png" alt="bluezendrone" style="width:100%">
 
+          <img src="images/bluezendrone.png" alt="bluezendrone" style="width:100%;">
+          <p><br></p>
           <h3><a target="_blank " href="https://www.sysdrone.co.kr/home?lang=ko">BluezenDrone</a></h3>
           <p>International Consultant</p>
         </div>
+        <br>
       </div>
-      <div id="bluezendrone" style="display:none">lisa</div>
+      <div id="bluezendrone" style="display:none">
+        <!-- Info 4 -->
+        <div class="row" id="info4">
+          <div class="side2">
+          </div>
+
+          <div class="side1">
+            <h2>BluezenDrone</h2>
+            <h3>International Consultant </h3>
+            <h4>May 2019 – June 2019</h4>
+            <li>Created customer value proposition and conducted competitive analysis for a $1M drone subparts company </li>
+            <li>Conducted industry research to develop a 90-day action plan for a U.S. market entry</li>
+          </div>
+        </div>
+      </div>
 
     </div>
 
   </div>
 
-  <div class="row" id="nucsanucsa">
+  <div class="row" id="exp_row_2" style="padding-top:1%; padding-bottom:1%;">
     <div class="column">
-      <div class="card">
-        <br><br><br><br>
+      <div class="card" onclick="ShowAndHide('csacard', 'exp', 'projects')">
+        <p><br><br></p>
         <img src="images/csa.png" alt="csa" style="width:100%">
+        <p><br><br><br><br><br><br><br><br></p>
         <div class="container">
+
           <h3><a target="_blank " href="http://northeastern.edu/csa/">Northeastern University Chinese Student Association</a></h3>
           <p>Vice President, Event Coordinator</p>
         </div>
       </div>
+      <div id="csacard" class="child-div" style="display:none">
+        <div class="row">
+          <div class="side1">
+            <h2>Northeastern University Chinese Student Association</h2>
+            <h3>Vice President, Events Coordinator</h3>
+            <h4>May 2018 - Present</h4>
+            <li>Maintain internal relations among the eleven other executive board members to ensure high-quality general meetings</li>
+            <li>Reached out to and brought in high-profile individuals, including Awkwafina, for university-wide events</li>
+          </div>
+
+          <div class="side2">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="row" id="info1">
-    <div class="side1">
-      <h2>Boston Engineering Corporation</h2>
-      <h3>Software Engineering Co-op. January 2021 - June 2021</h3>
-      <p>Boston Engineering Corporation description.</p>
-    </div>
 
-    <div class="side2">
-    </div>
+
+
+  <div class="title" id="projects">
+    <h1 style="text-align:center;">Projects</h1>
   </div>
-
-  <!-- Info 2 -->
-  <div class="row" id="info2">
-    <div class="side2">
-    </div>
-
-    <div class="side1">
-      <h2>Lightelligence</h2>
-      <h3>Software Engineering Co-op</h3>
-      <h4>January 2020 - September 2020</h4>
-      <li>Designed an HTML page that displayed documentation for registers and
-        their fields in a table format using the jinja library in Python;
-        increased efficiency by 25% by organizing data libraries to create ease of access
-      </li>
-      <li>Developed an API that allows for the remote control of 6 unique lab equipment instruments using the PyVISA library
-        and object-oriented programming techniques
-      </li>
-      <li>Wrote over SPI in a LabVIEW program and obtained data using Python and NI software to gather data on PCBs</li>
-      <li>Performed debugging checks on a photonic circuit board to test the functionality of the board in a lab environment</li>
-      <li>Generated quality assurance tests to confirm the accuracy of naming conventions and MSB to LSB ordering for fields</li>
-    </div>
-  </div>
-
-  <!-- Info 3 -->
-  <div class="row" id="info3">
-    <div class="side1">
-      <h2>Northeastern University Paradigm Hyperloop Team</h2>
-      <h3>Member</h3>
-      <h4>October 2018 - January 2019</h4>
-      <li>Researched feasible routes from Boston to NYC considering factors of elevation, pylon tubing, and tunneling</li>
-      <li>Generated a report detailing the research completed to be officially submitted to the Paradigm Hyperloop organization</li>
-    </div>
-
-    <div class="side2">
-    </div>
-  </div>
-
-  <!-- Info 4 -->
-  <div class="row" id="info4">
-    <div class="side2">
-    </div>
-
-    <div class="side1">
-      <h2>BluezenDrone</h2>
-      <h3>International Consultant </h3>
-      <h4>May 2019 – June 2019</h4>
-      <li>Created customer value proposition and conducted competitive analysis for a $1M drone subparts company </li>
-      <li>Conducted industry research to develop a 90-day action plan for a U.S. market entry</li>
-    </div>
-  </div>
-
-  <!-- Info 5 -->
-  <div class="row" id="info4">
-    <div class="side1">
-      <h2>Northeastern University Chinese Student Association</h2>
-      <h3>Vice President, Events Coordinator</h3>
-      <h4>May 2018 - Present</h4>
-      <li>Maintain internal relations among the eleven other executive board members to ensure high-quality general meetings</li>
-      <li>Reached out to and brought in high-profile individuals, including Awkwafina, for university-wide events</li>
-    </div>
-
-    <div class="side2">
-    </div>
-  </div>
-
-  <h2 id="projects">Projects</h2>
 
   <div class="row">
     <div class="column">
-      <div class="card">
+      <div class="card" onclick="ShowAndHide('csawebsite', 'projects', 'footer')">
         <br><br><br><br>
         <img src="images/csa.png" alt="csa" style="width:100%">
+        <p><br><br><br><br><br></p>
+
         <div class="container">
           <h3>Northeastern University Chinese Student Association Website</h3>
           <p>Summer 2020</p>
         </div>
       </div>
+
+      <div id='csawebsite' class="child-div" style="display:none;">
+        <div class="row" id="project1">
+          <div class="side1"></div>
+
+          <div class="side2">
+            <h2>Northeastern University Chinese Student Association Website</h2>
+            <h3>Summer 2020</h3>
+            <p>Repurposed the layout and color scheme of the website using HTML, CSS, and Git (<a href="https://northeastern.edu/csa" target="_blank">northeastern.edu/csa</a>)</p>
+            <p>Managed a five-person team: Taught members basic Git skills, assigned tasks to each member, and hosted weekly
+              meetings to provide progress updates</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="column">
-      <div class="card">
+      <div class="card" onclick="ShowAndHide('wof', 'projects', 'footer')">
         <br><br><br>
         <img src="images/andriod_studio.png" alt="android" style="width:100%">
+        <p><br><br><br><br><br></p>
+
         <div class="container">
           <h3>Wheel of Food: Android Mobile Application</h3>
           <p>Summer 2019</p>
         </div>
       </div>
+
+      <div id='wof' class="child-div" style="display:none;">
+        <div class="row" id="project2">
+          <div class="side2">
+            <h2>Wheel of Food: Android Mobile Application</h2>
+            <h3>Summer 2019</h3>
+            <p>Span a wheel containing food options through the push of button and displayed the selected food item afterwards</p>
+            <p>Built using Java and Android Studio</p>
+          </div>
+
+          <div class="side1">
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="column">
-      <div class="card">
-        <br>
+      <div class="card" onclick="ShowAndHide('pillbot', 'projects', 'footer')">
         <img src="images/pillbot.jpg" alt="cornerstone" style="width:100%; height:100%;">
+        <p><br><br><br><br><br></p>
         <div class="container">
           <h3>Pillbot: Cornerstone of Engineering Course</h3>
           <p>Spring 2019</p>
         </div>
       </div>
+
+      <div id='pillbot' class="child-div" style="display:none;">
+        <div class="row" id="project3">
+          <div class="side1">
+          </div>
+
+          <div class="side2">
+            <h2>Pillbot: Cornerstone of Engineering Course</h2>
+            <h3>Spring 2019</h3>
+            <p>Built automated pill-dispensing device using Arduino which activated at a time contingent on the user</p>
+            <p>Dispensed certain number of pills at specified time based on a clock</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="column">
-      <div class="card">
+      <div class="card" onclick="ShowAndHide('wpi', 'projects', 'footer')">
         <img src="images/alexa_skill.jpeg" alt="bluezendrone" style="width:100%">
+        <p><br><br><br><br></p>
         <div class="container">
           <h3>Alexa Skill "Sound Clips":<br> Hack@WPI</h3>
           <p>Winter 2019</p>
         </div>
       </div>
+
+      <div id='wpi' class="child-div" style="display:none;">
+
+        <div class="row" id="project4">
+          <div class="side2">
+            <h2>Alexa Skill: Sound Clips: Hack@WPI</h2>
+            <h3>Winter 2019</h3>
+            <p>Built Alexa Skill using Java that served as a soundboard to a wide range of popular audio recordings</p>
+            <p>Played randomly generated clips and took requests from users to play specific clips</p>
+          </div>
+
+          <div class="side1">
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="row" id="project1">
-    <div class="side1"></div>
-
-    <div class="side2">
-      <h2>Northeastern University Chinese Student Association Website</h2>
-      <h3>Summer 2020</h3>
-      <p>Repurposed the layout and color scheme of the website using HTML, CSS, and Git (<a href="https://northeastern.edu/csa" target="_blank">northeastern.edu/csa</a>)</p>
-      <p>Managed a five-person team: Taught members basic Git skills, assigned tasks to each member, and hosted weekly
-        meetings to provide progress updates</p>
-    </div>
-  </div>
-
-  <div class="row" id="project2">
-    <div class="side2">
-      <h2>Wheel of Food: Android Mobile Application</h2>
-      <h3>Summer 2019</h3>
-      <p>Span a wheel containing food options through the push of button and displayed the selected food item afterwards</p>
-      <p>Built using Java and Android Studio</p>
-    </div>
-
-    <div class="side1">
-    </div>
-  </div>
-
-  <div class="row" id="project3">
-    <div class="side1">
-    </div>
-
-    <div class="side2">
-      <h2>Pillbot: Cornerstone of Engineering Course</h2>
-      <h3>Spring 2019</h3>
-      <p>Built automated pill-dispensing device using Arduino which activated at a time contingent on the user</p>
-      <p>Dispensed certain number of pills at specified time based on a clock</p>
-    </div>
-  </div>
-
-  <div class="row" id="project4">
-    <div class="side2">
-      <h2>Alexa Skill: Sound Clips: Hack@WPI</h2>
-      <h3>Winter 2019</h3>
-      <p>Built Alexa Skill using Java that served as a soundboard to a wide range of popular audio recordings</p>
-      <p>Played randomly generated clips and took requests from users to play specific clips</p>
-    </div>
-
-    <div class="side1">
-    </div>
-  </div>
   <!--EMAIL FORM (PHP not supported on github pages)
   <div class="contact-outer">
     <div class="contact" id="contact">
@@ -411,20 +411,20 @@
   </div>
   -->
 
-    <!-- Footer -->
-    <div class="footer" id="footer">
+  <!-- Footer -->
+  <div class="footer" id="footer">
 
-      <p style="font-size:220%; word-spacing:1em;">
-        <a href="https://www.linkedin.com/in/joshua-an-a44368175/" target="_blank" class="fab fa-linkedin"></a>
-        <a href="https://github.com/joshuaan7" target="_blank" class="fab fa-github"></a>
-        <a href="https://www.facebook.com/joshua.an.98" target="_blank" class="fab fa-facebook-f"></a>
-        <a href="https://www.instagram.com/joshuwazzan/" target="_blank" class="fab fa-instagram"></a>
-      </p>
-      <p><a href="https://joshuaan7@gmail.com" target="_blank">joshuaan7@gmail.com</a></p>
-      <p><a href="https://an.j@northeastern.edu" target="_blank">an.j@northeastern.edu</a></p>
-      <p>Last Updated: January 15th, 2021</p>
-    </div>
+    <p style="font-size:220%; word-spacing:1em;">
+      <a href="https://www.linkedin.com/in/joshua-an-a44368175/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://github.com/joshuaan7" target="_blank" class="fab fa-github"></a>
+      <a href="https://www.facebook.com/joshua.an.98" target="_blank" class="fab fa-facebook-f"></a>
+      <a href="https://www.instagram.com/joshuwazzan/" target="_blank" class="fab fa-instagram"></a>
+    </p>
+    <p><a href="https://joshuaan7@gmail.com" target="_blank">joshuaan7@gmail.com</a></p>
+    <p><a href="https://an.j@northeastern.edu" target="_blank">an.j@northeastern.edu</a></p>
+    <p>Last Updated: January 15th, 2021</p>
+  </div>
 
-  </body>
+</body>
 
 </html>
