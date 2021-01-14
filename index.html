@@ -95,15 +95,15 @@
     </div>
   </div>
 
-  <div class="lines">
-    <h2 id="exp">Work and Leadership Experience</h2>
+  <div class="title"id="exp">
+    <h1>Work and Leadership Experience</h1>
   </div>
   <!-- Info 1 -->
 
 
   <div class="row" id="work">
     <div class="column">
-      <div class="card" id="be_top" onclick="ShowAndHide('be', 'exp', 'exp_row_2')" style="line-height:149%;">
+      <div class="card" id="be_top" onclick="ShowAndHide('be', 'be-content', 'exp', 'exp_row_2')" style="line-height:149%;">
         <br><br><br><br>
         <img src="images/boston_engineering.png" alt="boston_engineering" style="width:100%">
         <p><br><br><br><br><br><br><br><br><br></p>
@@ -115,16 +115,11 @@
       </div>
 
       <div id="be" class="child-div" style="display:none">
-        <div class="row">
-          <div class="side1" id="be-content">
+        <div class="row" id="be-content">
+          <div class="side1">
             <h2>Boston Engineering Corporation</h2>
             <h3>Software Engineering Co-op. January 2021 - June 2021</h3>
             <p>Boston Engineering Corporation description.</p>
-            <p>Boston Engineering Corporation description.</p>
-            <p>Boston Engineering Corporation description.</p>
-            <p>Boston Engineering Corporation description.</p>
-            <p>Boston Engineering Corporation description.</p>
-
           </div>
 
           <div class="side2">
@@ -137,7 +132,7 @@
 
     <div class="column">
 
-      <div class="card" onclick="ShowAndHide('light', 'exp', 'exp_row_2')">
+      <div class="card" onclick="ShowAndHide('light', 'light_content', 'exp', 'exp_row_2')">
         <br>
         <img src="images/lightelligence.png" alt="lightelligence" style="width:100%">
         <p><br><br><br><br><br><br><br></p>
@@ -149,62 +144,63 @@
       </div>
 
       <div id="light" class="child-div" style="display:none">
-        <div class="row">
+        <div class="row" id="light_content">
+
           <div class="side2">
           </div>
-
           <div class="side1">
             <h2>Lightelligence</h2>
             <h3>Software Engineering Co-op</h3>
             <h4>January 2020 - September 2020</h4>
-            <li>Designed an HTML page that displayed documentation for registers and
+            <p>Designed an HTML page that displayed documentation for registers and
               their fields in a table format using the jinja library in Python;
               increased efficiency by 25% by organizing data libraries to create ease of access
-            </li>
-            <li>Developed an API that allows for the remote control of 6 unique lab equipment instruments using the PyVISA library
+            </p>
+            <p>Developed an API that allows for the remote control of 6 unique lab equipment instruments using the PyVISA library
               and object-oriented programming techniques
-            </li>
-            <li>Wrote over SPI in a LabVIEW program and obtained data using Python and NI software to gather data on PCBs</li>
-            <li>Performed debugging checks on a photonic circuit board to test the functionality of the board in a lab environment</li>
-            <li>Generated quality assurance tests to confirm the accuracy of naming conventions and MSB to LSB ordering for fields</li>
+            </p>
+            <p>Wrote over SPI in a LabVIEW program and obtained data using Python and NI software to gather data on PCBs</p>
+            <p>Performed debugging checks on a photonic circuit board to test the functionality of the board in a lab environment</p>
+            <p>Generated quality assurance tests to confirm the accuracy of naming conventions and MSB to LSB ordering for fields</p>
           </div>
+
         </div>
 
       </div>
     </div>
 
     <div class="column">
-      <div class="card" onclick="ShowAndHide('hyperloop', 'exp', 'exp_row_2')">
+      <div class="card" onclick="ShowAndHide('hyperloop', 'hyperloop_content', 'exp', 'exp_row_2')">
 
         <img src="images/hyperloop.jpg" alt="hyperloop" style="width:90%">
         <p><br><br><br><br><br></p>
 
         <div class="container">
-
           <h3><a target="_blank" href="https://coe.northeastern.edu/orgs/paradigm-hyperloop/">Northeastern University Paradigm Hyperloop Team</a></h3>
           <p>Member</p>
         </div>
       </div>
-      <div id="hyperloop" style="display:none">
-        <!-- Info 3 -->
-        <div class="row" id="info3">
+
+      <div id="hyperloop" class="child-div" style="display:none">
+
+        <div class="row" id="hyperloop_content">
           <div class="side1">
             <h2>Northeastern University Paradigm Hyperloop Team</h2>
             <h3>Member</h3>
             <h4>October 2018 - January 2019</h4>
-            <li>Researched feasible routes from Boston to NYC considering factors of elevation, pylon tubing, and tunneling</li>
-            <li>Generated a report detailing the research completed to be officially submitted to the Paradigm Hyperloop organization</li>
+            <p>Researched feasible routes from Boston to NYC considering factors of elevation, pylon tubing, and tunneling</p>
+            <p>Generated a report detailing the research completed to be officially submitted to the Paradigm Hyperloop organization</p>
           </div>
 
           <div class="side2">
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
 
     <div class="column">
-      <div class="card" onclick="ShowAndHide('bluezendrone', 'exp', 'exp_row_2')">
+      <div class="card" onclick="ShowAndHide('bluezendrone', 'bluezendrone_content', 'exp', 'exp_row_2')">
         <p><br><br><br><br><br><br><br><br>
           <br><br><br><br><br><br><br><br></p>
 
@@ -217,9 +213,9 @@
         </div>
         <br>
       </div>
-      <div id="bluezendrone" style="display:none">
-        <!-- Info 4 -->
-        <div class="row" id="info4">
+      <div id="bluezendrone" class="child-div" style="display:none">
+
+        <div class="row" id="bluezendrone_content">
           <div class="side2">
           </div>
 
@@ -227,8 +223,8 @@
             <h2>BluezenDrone</h2>
             <h3>International Consultant </h3>
             <h4>May 2019 – June 2019</h4>
-            <li>Created customer value proposition and conducted competitive analysis for a $1M drone subparts company </li>
-            <li>Conducted industry research to develop a 90-day action plan for a U.S. market entry</li>
+            <p>Created customer value proposition and conducted competitive analysis for a $1M drone subparts company </p>
+            <p>Conducted industry research to develop a 90-day action plan for a U.S. market entry</p>
           </div>
         </div>
       </div>
@@ -237,9 +233,9 @@
 
   </div>
 
-  <div class="row" id="exp_row_2" style="padding-top:1%; padding-bottom:1%;">
+  <div class="row" id="exp_row_2">
     <div class="column">
-      <div class="card" onclick="ShowAndHide('csacard', 'exp', 'projects')">
+      <div class="card" onclick="ShowAndHide('csacard', 'csacard_content', 'exp', 'projects')">
         <p><br><br></p>
         <img src="images/csa.png" alt="csa" style="width:100%">
         <p><br><br><br><br><br><br><br><br></p>
@@ -250,13 +246,13 @@
         </div>
       </div>
       <div id="csacard" class="child-div" style="display:none">
-        <div class="row">
-          <div class="side1">
+        <div class="row" id="csacard_content">
+          <div class="side1" >
             <h2>Northeastern University Chinese Student Association</h2>
             <h3>Vice President, Events Coordinator</h3>
             <h4>May 2018 - Present</h4>
-            <li>Maintain internal relations among the eleven other executive board members to ensure high-quality general meetings</li>
-            <li>Reached out to and brought in high-profile individuals, including Awkwafina, for university-wide events</li>
+            <p>Maintain internal relations among the eleven other executive board members to ensure high-quality general meetings</p>
+            <p>Reached out to and brought in high-profile individuals, including Awkwafina, for university-wide events</p>
           </div>
 
           <div class="side2">
@@ -266,16 +262,13 @@
     </div>
   </div>
 
-
-
-
   <div class="title" id="projects">
-    <h1 style="text-align:center;">Projects</h1>
+    <h1>Projects</h1>
   </div>
 
   <div class="row">
     <div class="column">
-      <div class="card" onclick="ShowAndHide('csawebsite', 'projects', 'footer')">
+      <div class="card" onclick="ShowAndHide('csawebsite', 'csawebsite_content', 'projects', 'footer')">
         <br><br><br><br>
         <img src="images/csa.png" alt="csa" style="width:100%">
         <p><br><br><br><br><br></p>
@@ -287,7 +280,7 @@
       </div>
 
       <div id='csawebsite' class="child-div" style="display:none;">
-        <div class="row" id="project1">
+        <div class="row" id="csawebsite_content">
           <div class="side1"></div>
 
           <div class="side2">
@@ -302,7 +295,7 @@
     </div>
 
     <div class="column">
-      <div class="card" onclick="ShowAndHide('wof', 'projects', 'footer')">
+      <div class="card" onclick="ShowAndHide('wof', 'wof_content', 'projects', 'footer')">
         <br><br><br>
         <img src="images/andriod_studio.png" alt="android" style="width:100%">
         <p><br><br><br><br><br></p>
@@ -314,7 +307,7 @@
       </div>
 
       <div id='wof' class="child-div" style="display:none;">
-        <div class="row" id="project2">
+        <div class="row" id="wof_content">
           <div class="side2">
             <h2>Wheel of Food: Android Mobile Application</h2>
             <h3>Summer 2019</h3>
@@ -329,7 +322,7 @@
     </div>
 
     <div class="column">
-      <div class="card" onclick="ShowAndHide('pillbot', 'projects', 'footer')">
+      <div class="card" onclick="ShowAndHide('pillbot', 'pillbot_content', 'projects', 'footer')">
         <img src="images/pillbot.jpg" alt="cornerstone" style="width:100%; height:100%;">
         <p><br><br><br><br><br></p>
         <div class="container">
@@ -339,7 +332,7 @@
       </div>
 
       <div id='pillbot' class="child-div" style="display:none;">
-        <div class="row" id="project3">
+        <div class="row" id="pillbot_content">
           <div class="side1">
           </div>
 
@@ -354,7 +347,7 @@
     </div>
 
     <div class="column">
-      <div class="card" onclick="ShowAndHide('wpi', 'projects', 'footer')">
+      <div class="card" onclick="ShowAndHide('wpi', 'wpi_content', 'projects', 'footer')">
         <img src="images/alexa_skill.jpeg" alt="bluezendrone" style="width:100%">
         <p><br><br><br><br></p>
         <div class="container">
@@ -365,7 +358,7 @@
 
       <div id='wpi' class="child-div" style="display:none;">
 
-        <div class="row" id="project4">
+        <div class="row" id="wpi_content">
           <div class="side2">
             <h2>Alexa Skill: Sound Clips: Hack@WPI</h2>
             <h3>Winter 2019</h3>
@@ -411,6 +404,7 @@
   </div>
   -->
 
+  <div class="title" id="footer"><br></div>
   <!-- Footer -->
   <div class="footer" id="footer">
 
